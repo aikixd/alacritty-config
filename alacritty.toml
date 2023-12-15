@@ -1,0 +1,13 @@
+# shell = 'fish'
+
+
+# Shift > 1
+# Alt   > 2
+# Ctrl  > 4
+#
+# `CSI u` spec: http://www.leonerd.org.uk/hacks/fixterms/
+
+[keyboard]
+bindings = [
+  { key = "i", mods = "Control", chars = "\u001b[105;5u" }
+]

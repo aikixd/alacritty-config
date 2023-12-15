@@ -1,0 +1,7 @@
+shell:
+  program: /bin/fish 
+  # args:
+  #   - --login
+
+key_bindings:
+ - { key: I, mods: Control, chars: "\x1b[105;5u" }
