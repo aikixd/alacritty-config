@@ -1,7 +1,34 @@
+import:
+ - ~/.config/alacritty/alacritty-theme/themes/citylights.yaml
+
+window:
+  dynamic_padding: false
+  decorations: none
+
+font:
+  normal:
+    family: BitstromWera Nerd Font
+  builtin_box_drawing: true
+
+colors:
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+
+bell:
+  animation: Linear
+  duration: 300
+  color: '#d0a044'
+
 shell:
   program: /bin/fish 
   # args:
   #   - --login
 
 key_bindings:
- - { key: I, mods: Control, chars: "\x1b[105;5u" }
+  # CSI u: http://www.leonerd.org.uk/hacks/fixterms/
+  # Chars: https://symbl.cc/en/unicode/table/
+  # Gist: ESC<key>;<modes>u
+  - { key: I, mods: Control, chars: "\u001b[105;5u" }
+  - { key: P, mods: Control | Shift, chars: "\u001b[112;6u" }
+  - { key: U, mods: Control | Shift, chars: "\u001b[117;6u" }
