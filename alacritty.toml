@@ -1,13 +1,39 @@
-# shell = 'fish'
+import = ["/home/aikixd/.config/alacritty/alacritty-theme/themes/citylights.toml"]
 
+[shell]
+program = "/bin/fish"
 
-# Shift > 1
-# Alt   > 2
-# Ctrl  > 4
-#
-# `CSI u` spec: http://www.leonerd.org.uk/hacks/fixterms/
+[window]
+decorations = "none"
+dynamic_padding = false
 
-[keyboard]
-bindings = [
-  { key = "i", mods = "Control", chars = "\u001b[105;5u" }
-]
+[font]
+builtin_box_drawing = true
+
+[font.normal]
+family = "BitstromWera Nerd Font"
+
+[bell]
+animation = "Linear"
+color = "#d0a044"
+duration = 300
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[[keyboard.bindings]]
+chars = "\u001B[105;5u"
+key = "I"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001B[112;6u"
+key = "P"
+mods = "Control | Shift"
+
+[[keyboard.bindings]]
+chars = "\u001B[117;6u"
+key = "U"
+mods = "Control | Shift"
+
