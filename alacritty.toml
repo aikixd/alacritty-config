@@ -1,6 +1,7 @@
+[general]
 import = ["/home/aikixd/.config/alacritty/alacritty-theme/themes/citylights.toml"]
 
-[shell]
+[terminal.shell]
 program = "/bin/fish"
 
 [window]
@@ -36,4 +37,6 @@ mods = "Control | Shift"
 chars = "\u001B[117;6u"
 key = "U"
 mods = "Control | Shift"
+
+[terminal]
 
